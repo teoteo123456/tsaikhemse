@@ -1,0 +1,512 @@
+@font-face{
+    font-family: 'caps';
+    src: url('fonts/caps.ttf');
+}
+@font-face{
+    font-family: 'normal';
+    src: url('fonts/normal.ttf');
+}
+@font-face{
+	font-family: 'bold';
+	src: url('fonts/normal.ttf');
+
+}
+*{
+	margin: 0;
+	text-decoration: none;
+	padding: 0;
+	list-style: none;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+ /*aqmivaniche mtlianad bodys rom yofiliyo 1080, bolo shvilis, anu footeris garda*/
+body > :not(footer){
+	max-width: 1080px;
+	margin: 0 auto;
+	transition: all ease-out 0.2s;
+}
+
+header, ul{
+	display: flex;
+}
+header{
+	justify-content: space-between;
+	height: 60px;
+	align-items: center;
+}
+.header-navigation{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
+}
+a {
+	color: #181818;
+	transition: 300ms color ease;
+}
+.header-navigation a:hover{
+	color: #BADC58;
+	transition: 300ms color ease; 
+}
+
+
+.hero-content{
+    height: calc(100vh - 60px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+.hero-content::before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 60px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #181818;
+	opacity: 0.6;
+	z-index: -1;
+}
+
+.hero-content::after{
+    content: '';
+    background-image: url(images/basil1.png);
+    width: 1264px;
+    height: 561px;
+    position: absolute;
+    right: -896.8px;
+    bottom: -395px;
+    z-index: 9999;
+}
+
+.hero{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.hero-title{
+	font-family: caps;
+	font-size: 50px;
+	color: white;
+}
+.hero p{
+	font-family: 'normal';
+	font-size: 14px;
+	color: white;
+	padding-top: 15px;
+}
+.hero-more{
+	color: #000000;
+    margin: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 47px;
+    padding-right: 47px;
+    border-radius: 10px;
+    background-color: #BADC58;
+    font-family: 'caps';
+    
+
+
+}
+.main-image{
+    height: calc(100vh - 60px);
+	position: absolute;
+	top: 60px;
+	left: 0;
+	width: 100%;
+	z-index: -2;
+
+}
+
+
+.scroll-down{
+    position: absolute;
+	bottom: 112px;
+	color: white;
+}
+.arrow{
+	position: absolute;
+	bottom: 90px;
+}
+h1{
+	font-family: 'caps';
+	color: #181818;
+	font-size: 30px;
+	text-align: center;
+}
+h2, h3{
+	font-family: 'caps';
+	font-size: 16px;
+}
+
+.border{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	box-shadow: 0 3px 18px #cecece;
+	position: relative;
+	z-index: 10;
+	background-color: #fff;
+}
+.border::before {
+    content:'';
+    display: block;
+    top:-57px;
+    width:100%;
+    height:57px;
+    position: relative;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px;
+
+}
+.border::after{
+	content: '';
+	display: block;
+	bottom: -57px;
+	width: 100%;
+	height: 57px;
+	position: relative;
+	background-color: #fff;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+
+}
+
+.text{
+	color: white;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.flex{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
+}
+
+h2{
+	font-size: 16px;
+	text-align: center;
+	margin-top: 21px;
+}
+ /*aq h3 subtitles gamo zis, or xazze brake it rom ar gadmomewia*/
+h3{
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 8px;
+}
+button{
+	border-color: #BADC58;
+	margin: 21px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	padding-right: 44px;
+	padding-left: 44px;
+	border-radius: 10px;
+	font-family: 'caps';;
+	font-size: 14px;
+
+}
+.flex li{
+	width: 329px;
+    text-align: center;
+	height: 400px;
+}
+.flex p{
+	font-size: 10px;
+}
+.satauri{
+    margin-bottom: 50px;
+    margin-top: -50px;
+}
+.footer{
+	height: 557px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #000;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+.footer::before{
+	content: '';
+    background-image: url(images/basil2.png);
+    width: 1264px;
+    height: 561px;
+    position: absolute;
+    left: -995.2px;
+    bottom: 404px;
+    z-index: -1; 
+}
+/*footer is Shignit shvilebs qondes 1080 */
+.footer > * {
+	width: 1080px;
+}
+
+.flex1{
+	display: flex;
+
+	justify-content: space-between;
+	align-items: baseline;
+
+}
+.ruka{
+	width: 1080px;
+	height: 290px;
+	border: 1px;
+	border-radius: 20px;
+
+}
+.iframe{
+	border-radius: 20px;
+	overflow: hidden;
+}
+.adress{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	align-items: center;
+	background-color: #fff;
+	color: #F59A63;
+	border: 1px #fff;
+	border-radius: 20px;
+	width: 1080px;
+	height: 60px;
+}
+.hover1 a:hover path{
+    fill: #BADC58;
+}
+body {
+	overflow-x: hidden;
+}
+.hover1{
+	display: flex;
+	justify-content: space-between;
+	width: 100px;
+
+}
+.hover1 svg{
+	height: 20px;
+}
+.flex li:hover{
+	box-shadow: 0 3px 18px #cecece;
+	border-radius: 20px;
+	
+}
+
+@media all and (max-width: 1200px) {
+	body > :not(footer){
+	width: 80%;
+}
+.footer > * {
+	width: 80%;
+}
+.flex{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.hero-title{
+	font-family: caps;
+	font-size: 30px;
+	color: white;
+}
+
+body {
+	overflow-x: hidden;
+}
+@media all and (max-width: 1024px) {
+	body > :not(footer){
+	width: 80%;
+}
+.footer > * {
+	width: 80%;
+}
+
+
+
+@media all and (max-width: 780px) {
+	body > :not(footer){
+	max-width: 600px;
+
+}
+body {
+	overflow-x: hidden;
+}
+.footer::before{
+	display: none;
+}
+
+
+.main-image{
+    height: calc(90vh - 60px);
+	position: absolute;
+	top: 60px;
+	left: 0;
+	width: 100%;
+	z-index: -2;
+
+}
+.hero-content{
+    height: calc(90vh - 60px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.hero-content::after{
+    display: none;
+}
+.hero-content::before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 60px;
+	bottom: 10vh;
+	left: 0;
+	right: 0;
+	background-color: #181818;
+	opacity: 0.6;
+	z-index: -1;
+}
+
+.footer > * {
+	max-width: 600px;
+}
+
+
+@media all and (min-width: 320px) and (max-width: 480px){
+ body > :not(footer){
+
+
+	width: 80%;
+}
+body {
+	overflow-x: hidden;
+}
+.footer::before{
+	display: none;
+}
+
+
+.main-image{
+    height: calc(50vh - 60px);
+	position: absolute;
+	top: 60px;
+	left: 0;
+	width: 100%;
+	z-index: -2;
+
+}
+.hero-content{
+    height: calc(50vh - 60px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.hero-content::before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 60px;
+	bottom: 50vh;
+	left: 0;
+	right: 0;
+	background-color: #181818;
+	opacity: 0.6;
+	z-index: -1;
+}
+
+.footer > * {
+	width: 80%;
+}
+.satauri{
+    margin-bottom: 20px;
+    margin-top: -58px;
+}
+
+
+h1 {
+    font-family: 'caps';
+    color: #181818;
+    font-size: 18px;
+    text-align: center;
+}
+.hero p {
+    font-family: 'normal';
+    font-size: 12px;
+    color: white;
+    padding-top: 15px;
+}
+.hero-title{
+    font-family: caps;
+    font-size: 19px;
+    color: white;
+}
+.flex1{
+	display: flex;
+    flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 200px;
+
+}
+.flex1 a{
+	order: 3;
+
+}
+.flex1 img{
+	order: 2;
+}
+.flex1 span{
+	order: 2;
+}
+.footer{
+	height: 700px;
+
+}
+.adress{
+	display: flex;
+	flex-direction: column;
+}
+.hero-more{
+	color: #fff;
+    margin: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 47px;
+    padding-right: 47px;
+    border-radius: 10px;
+   
+    border: 1px solid #fff;
+ 
+    background-color: transparent;
+    font-family: 'caps';
+    
+
+
+}
+}
